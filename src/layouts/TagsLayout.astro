@@ -15,7 +15,7 @@ export interface Props {
 
 const { posts, tag } = Astro.props as Props;
 
-const filteredPosts = filterPostsByTag(posts, tag ? `${tag}` : "general");
+const filteredPosts = filterPostsByTag(posts, tag ? `${tag}` : "Home");
 const tags = findTags(posts);
 ---
 

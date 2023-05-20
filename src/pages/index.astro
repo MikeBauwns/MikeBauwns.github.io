@@ -6,6 +6,7 @@ import { SITE_TITLE, SITE_DESCRIPTION, SITE_SUB_TITLE } from "../config";
 import PostTile from "../components/PostTile.astro";
 import TagsFilter from "../components/TagsFilter.astro";
 import { findTags, mapPosts } from "../utils/post.utils";
+import { Icon } from "astro-icon";
 
 // Use Astro.glob() to fetch all posts, and then sort them by date.
 const posts = await Astro.glob("./blog/*.{md,mdx}");
@@ -23,43 +24,40 @@ const tags = findTags(mappedPosts);
 	<body class="dark:bg-black text-black dark:text-white">
 		<Header title={SITE_TITLE} />
 		<main>
-			<h2 class="font-bold text-xl mb-6 dark:text-white">
-				{SITE_SUB_TITLE}
-			</h2>
+			
 
-			<div class="mb-8">
-				<p>
-					Here you can add some further information about yourself and
-					what you're doing. As well you can find more information <a
-						href="/about"
-						class="text-red-500 hover:text-red-700">about me</a
-					> on this page.
-				</p>
-			</div>
+			
 
 			<div>
-				<h3 class="font-bold text-red-500 text-lg">Posts</h3>
 
-				<TagsFilter selectedTag={currentTag} tags={tags} />
-
-				<div class="grid grid-cols-1 gap-4 mt-3 mb-3">
-					{
-						mappedPosts.map((p) => (
-							<PostTile
-								url={p.url}
-								title={p.frontmatter.title}
-								description={p.frontmatter.description}
-								date={p.frontmatter.pubDate}
-								is:raw
-							/>
-						))
-					}
+				<div class="flex flex-row mb-2">
+					<a
+					  class="bg-black dark:bg-white text-white  dark:text-black bg-red-500 dark:bg-red-500 mr-2 mb-1 pt-1 pb-1 pl-3 pr-3 rounded-xl"
+					  href="/">Home</a
+					>
+					<a
+					  class="bg-black dark:bg-white  text-white  dark:text-black hover:bg-red-500 dark:hover:bg-red-500 mr-2 mb-1 pt-1 pb-1 pl-3 pr-3 rounded-xl"
+					  href="/blog">Blog</a
+					>
+					<a
+					  class="bg-black dark:bg-white text-white dark:text-black hover:bg-red-500 dark:hover:bg-red-500 mr-2 mb-1 pt-1 pb-1 pl-3 pr-3 rounded-xl"
+					  href="/about">About</a
+					>
 				</div>
-
-				<a href="/blog" class="text-red-500 hover:text-red-700"
-					>See all posts</a
-				>
+				
 			</div>
+			<h1>Hello and welcome to my site. My name is Mike.</h1>
+			<p>
+				
+				I'm currently a student at Howest, pursuing a bachelor's degree in applied computer science with a minor in cybersecurity. 
+				I've always had a fascination with technology and IT-related subjects, but it wasn't until my first year of applied computer science that I discovered my passion for cybercrime and cybersecurity.
+			</p>
+			<br>
+			<p>
+				This site started as a project for school, but I will regularly update it with the projects I have started and the events I have attended. 
+				I Like learning new techniques, skills, and programming languages and I hope that someday I'll make an impact om the IT world.
+			</p>
+			<br>
 		</main>
 		<Footer />
 	</body>

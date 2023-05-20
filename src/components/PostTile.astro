@@ -10,9 +10,9 @@ const { url, title, description, date } = Astro.props;
 
 const shortDescription = `${description.substring(0, 60)} ...`;
 ---
-
-<div class="mb-2">
-    <div class="pb-2 mb-2">
+<div class="mb-2" onclick="redirect(event)">
+    <div class="pb-2 mb-2" data-url={url}>
+        
         <div class="mb-2">
             <a
                 href={url}
@@ -31,7 +31,7 @@ const shortDescription = `${description.substring(0, 60)} ...`;
                 {date}
             </span>
         </div>
+        
     </div>
-
     <div class="h-px border-gray-500 border-b w-full">&nbsp;</div>
 </div>

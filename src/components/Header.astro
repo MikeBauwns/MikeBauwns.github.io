@@ -41,4 +41,17 @@ import { SITE_TITLE } from "../config";
 			});
 		}
 	};
+	function redirect(event){
+		var element = event.target
+		var dataValue = element.getAttribute('data-url')
+		var redirect ="#"
+		if (dataValue) {
+			redirect =dataValue
+		}else if(element.parentElement.getAttribute('data-url')){
+			redirect = element.parentElement.getAttribute('data-url')
+		}
+    	window.location.href=redirect
+		
+	}
+
 </script>

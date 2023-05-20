@@ -6,7 +6,7 @@ import TagsLayout from "../../../layouts/TagsLayout.astro";
 const posts = await Astro.glob("../*.{md,mdx}");
 const mappedPosts = mapPosts(posts);
 
-const tag = "general";
+const tag = "Home";
 ---
 
 <TagsLayout posts={mappedPosts} tag={tag} />

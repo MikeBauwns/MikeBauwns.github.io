@@ -27,13 +27,29 @@ const tags = findTags(mappedPosts);
 				{SITE_SUB_TITLE}
 			</h2>
 
-			<h3 class="font-bold text-red-500 text-lg">Posts</h3>
+			<div>
 
-			<TagsFilter selectedTag={tag} tags={tags} />
+				<div class="flex flex-row mb-2">
+					<a
+					  class="bg-black dark:bg-white text-white  dark:text-black hover:bg-red-500 dark:hover:bg-red-500 mr-2 mb-1 pt-1 pb-1 pl-3 pr-3 rounded-xl"
+					  href="/">Home</a
+					>
+					<a
+					  class="bg-black dark:bg-white  text-white  dark:text-black bg-red-500 dark:bg-red-500 mr-2 mb-1 pt-1 pb-1 pl-3 pr-3 rounded-xl"
+					  href="/blog">Blog</a
+					>
+					<a
+					  class="bg-black dark:bg-white text-white dark:text-black hover:bg-red-500 dark:hover:bg-red-500 mr-2 mb-1 pt-1 pb-1 pl-3 pr-3 rounded-xl"
+					  href="/about">About</a
+					>
+				</div>
+				
+			</div>
 
 			<div class="grid grid-cols-1 gap-4 mt-3 mb-3">
 				{
 					mappedPosts.map((p) => (
+						
 						<PostTile
 							url={p.url}
 							title={p.frontmatter.title}

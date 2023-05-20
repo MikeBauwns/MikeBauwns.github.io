@@ -10,11 +10,9 @@ const mappedPosts = mapPosts(posts);
 
 export function getStaticPaths() {
 	return [
-		{ params: { tag: "general" } },
-		{ params: { tag: "tech" } },
-		{ params: { tag: "food" } },
-		{ params: { tag: "nature" } },
-		{ params: { tag: "astro" } },
+		{ params: { tag: "Home" } },
+		{ params: { tag: "Blog" } },
+		{ params: { tag: "About" } },
 	];
 }
 ---
