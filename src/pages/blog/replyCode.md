@@ -2,10 +2,10 @@
 layout: "../../layouts/BlogPost.astro"
 title: "Reply code challenge"
 description: "The Reply Code Challenge took place on March 9, 2023, and happens every year."
-pubDate: "Jul 15 2022"
+pubDate: "Mar 15 2023"
 heroImage: "/placeholder-hero.jpg"
 ---
-
+![code](/code.png)
 ## What is the challenge challenge?
 
 The Reply Code Challenge took place on March 9, 2023, and happens every year. The challenge consisted of six different coding challenges that you had to solve/create. You earned points for completing challenges, the difficulty of the challenge, accuracy, how fast you solved them, and in exceptional cases, there are bonus points.

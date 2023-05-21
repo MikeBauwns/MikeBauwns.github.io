@@ -1,11 +1,13 @@
 ---
 layout: "../../layouts/BlogPost.astro"
 title: "webinar about Elastic Security"
-description: "Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro."
-pubDate: "Jul 01 2022"
+description: "The webinar was an online event hosted by Elastic, and it had three notable speakers: Jamer Spiteri,"
+pubDate: "Apr 21 2023"
 heroImage: "/placeholder-hero.jpg"
 ---
-## What is the webinar about Elastic Security?
+![elastic](/elastic.png)
+
+## What is the webinar of Elastic Security?
 
 The webinar was an online event hosted by Elastic, and it had three notable speakers: Jamer Spiteri, who is the Product Marketing Director at Elastic; Israel Ekpo, a Principal Cloud Solutions Architect at Microsoft; and Jeff Maddocks, a Principal Solutions Architect at Elastic.
 

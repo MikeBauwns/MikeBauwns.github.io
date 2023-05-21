@@ -6,13 +6,12 @@ import { SITE_TITLE, SITE_DESCRIPTION, SITE_SUB_TITLE } from "../config";
 import PostTile from "../components/PostTile.astro";
 import TagsFilter from "../components/TagsFilter.astro";
 import { findTags, mapPosts } from "../utils/post.utils";
-import { Icon } from "astro-icon";
 
 // Use Astro.glob() to fetch all posts, and then sort them by date.
 const posts = await Astro.glob("./blog/*.{md,mdx}");
-const mappedPosts = mapPosts(posts).slice(0, 3);
+const mappedPosts = mapPosts(posts);
 
-const currentTag = "general";
+const tag = "general";
 const tags = findTags(mappedPosts);
 ---
 
@@ -22,17 +21,14 @@ const tags = findTags(mappedPosts);
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body class="dark:bg-black text-black dark:text-white">
-		<Header title={SITE_TITLE} />
+		<Header />
 		<main>
 			
-
-			
-
 			<div>
 
 				<div class="flex flex-row mb-2">
 					<a
-					  class="bg-black dark:bg-white text-white  dark:text-black bg-red-500 dark:bg-red-500 mr-2 mb-1 pt-1 pb-1 pl-3 pr-3 rounded-xl"
+					  class="bg-black dark:bg-white text-white  dark:text-black hover:bg-red-500 dark:hover:bg-red-500 mr-2 mb-1 pt-1 pb-1 pl-3 pr-3 rounded-xl"
 					  href="/">Home</a
 					>
 					<a
@@ -43,32 +39,17 @@ const tags = findTags(mappedPosts);
 					  class="bg-black dark:bg-white text-white dark:text-black hover:bg-red-500 dark:hover:bg-red-500 mr-2 mb-1 pt-1 pb-1 pl-3 pr-3 rounded-xl"
 					  href="/about">About</a
 					>
-					<a
-					  class="bg-black dark:bg-white text-white dark:text-black hover:bg-red-500 dark:hover:bg-red-500 mr-2 mb-1 pt-1 pb-1 pl-3 pr-3 rounded-xl"
+                    <a
+					  class="bg-black dark:bg-white text-white dark:text-black bg-red-500 dark:bg-red-500 mr-2 mb-1 pt-1 pb-1 pl-3 pr-3 rounded-xl"
 					  href="/bounty">Bug Bounties</a
 					>
 				</div>
 				
 			</div>
-			<h1>Hello and welcome to my site. My name is Mike.</h1>
-			<p>
-				
-				I'm currently a student at Howest, pursuing a bachelor's degree in applied computer science with a minor in cybersecurity. 
-				I've always had a fascination with technology and IT-related subjects, but it wasn't until my first year of applied computer science that I discovered my passion for cybercrime and cybersecurity.
-			</p>
-			<br>
-			<p>
-				This site started as a project for school, but I will regularly update it with the projects I have started and the events I have attended. 
-				I Like learning new techniques, skills, and programming languages and I hope that someday I'll make an impact om the IT world.
-			</p>
-			<br>
-			<h2>
-				Current projects I'm working on.
-			</h2>
-			<p>
-				Here I will post all projects I started.
-			</p>
+
+			<h1>This is where you will find all bug bounties I found</h1>
+            <p>I'm currently still looking for my first bug bounty</p>
+			<Footer />
 		</main>
-		<Footer />
 	</body>
 </html>

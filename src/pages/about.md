@@ -2,7 +2,7 @@
 layout: "../layouts/BlogPostAbout.astro"
 title: ""
 description: "Here you can write something special about yourself"
-updatedDate: "August 08 2022"
+updatedDate: "May 20 2023"
 ---
 
 # About Me
@@ -11,8 +11,8 @@ Hi. I'm Mike Bauwens. I'm a 21-year-old student from Belgium. I have a great int
 If you want to contact me, you can do that via LinkedIn or email: mike.bauwns@gmail.com
 
 # Education
-* 2020 - present // Howest in Bruges - Applied Computer Science
-* 2014 - 2020 // Sint-Jozef Sint-Pieter in Blankenberge - IT and Networks
+* 2020 - present: Applied Computer Science - Howest in Bruges
+* 2014 - 2020: IT and Networks - Sint-Jozef Sint-Pieter in Blankenberge
 
 # Technical Skills
 

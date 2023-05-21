@@ -2,10 +2,10 @@
 layout: "../../layouts/BlogPost.astro"
 title: "Reply cyber security CTF challenge"
 description: "The Reply Cybersecurity challenge took place on October 14-15, 2022. Here is what happened"
-pubDate: "April 20 2023"
+pubDate: "Nov 03 2022"
 heroImage: "/placeholder-hero.jpg"
 ---
-
+![CTF](/CTF.png)
 ## What is the challenge challenge?
 
 The Reply Cybersecurity challenge took place on October 14-15, 2022, and happens every year. It's a contest where teams of up to four people can compete. The competition has challenges in five different categories: Coding, Web, Binary, Crypto, and Miscellaneous. In the Miscellaneous category, participants face special challenges that involve elements from different categories.

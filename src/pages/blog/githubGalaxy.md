@@ -2,9 +2,9 @@
 layout: "../../layouts/BlogPost.astro"
 title: "Github Galaxy"
 description: "GitHub Galaxy was a four-day conference organized by GitHub"
-pubDate: "Jul 22 2022"
+pubDate: "Apr 08 2023"
 ---
-
+![gitt](/git.webp)
 ## What is Github Galaxy?
 
 GitHub Galaxy was a four-day conference organized by GitHub, taking place from March 28 to March 31. The conference covered a broad range of subjects, such as software development cycles, AI, security, and productivity. It had many speakers from different fields, including GitHub staff and experienced developers in the technology industry.
