@@ -10,10 +10,6 @@ Hi. I'm Mike Bauwens. I'm a 21-year-old student from Belgium. I have a great int
 # Contact
 If you want to contact me, you can do that via LinkedIn or email: mike.bauwns@gmail.com
 
-# Education
-* 2020 - present: Applied Computer Science - Howest in Bruges
-* 2014 - 2020: IT and Networks - Sint-Jozef Sint-Pieter in Blankenberge
-
 # Technical Skills
 
 ## Development
@@ -21,16 +17,21 @@ If you want to contact me, you can do that via LinkedIn or email: mike.bauwns@gm
 * Java (Intermediate)
 * Python (Intermediate)
 * Bash / Powershell (Intermediate)
-* SQL (Intermediate)
+* SQL (Basic)
 * Astro (Basic)
 
 ## Security
 * Reverse Engineering (Basic)
-* Penetration Testing (Basic)
+* Penetration Testing (Intermediate)
 * Defensive / SOC (Basic)
 * Forensic Analysis (Basic)
 
 ## Others
 * Linux / Windows (Intermediate)
-* Virtualization (Intermediate)
+* Virtualization (Basic)
 * Networking (basic)
+
+# Education
+* 2020 - present: Applied Computer Science - Howest in Bruges
+* 2014 - 2020: IT and Networks - Sint-Jozef Sint-Pieter in Blankenberge
+
